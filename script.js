@@ -2,8 +2,6 @@ var wins = 0;
 var loses = 0;
 var draws = 0;
 
-//inital game 
-playGame();
 
 
 // options for computer to select 
@@ -59,6 +57,8 @@ var playGame = function () {
 
 };
 
+//keep game playing
+playGame();
 
 
 
