@@ -1,0 +1,10 @@
+h1 {
+    background-color: rgb(96, 96, 96);
+    color: white;
+}
+
+* {
+    background-color: black;
+    text-align: center;
+    font-size: 60px;
+}
