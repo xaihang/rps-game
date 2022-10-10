@@ -2,6 +2,10 @@ var wins = 0;
 var loses = 0;
 var draws = 0;
 
+//inital game 
+playGame();
+
+
 // options for computer to select 
 var options = ["Rock", "Paper", "Scissor"]
 
@@ -48,13 +52,13 @@ var playGame = function () {
     //asking if human wants to play again
     var playAgain = window.confirm("Do you want to play again?");
 
-    //if human press yes/ok, run the function again
+    //if human press ok, run the function again
     if (playAgain) {
         playGame();
     };
 
 };
 
-//run the game for the first time
-playGame();
+
+
 
