@@ -1,6 +1,6 @@
 # Rock, Paper, Scissors Game
 
-## A game of human vs computer playing random selection/options of Rock, Paper and Scissors game. 
+## A game of human vs computer playing random selection/options of Rock, Paper and Scissors game. Utlizing `alert()`, `confirm()`, and `prompt()` methods to collect user input and display information to the user.
 
 ## DELOYED LINK:
 
