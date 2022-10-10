@@ -6,5 +6,4 @@
 
 The following animation shows the web application's appearance and functionality:
 
-
-
+![portfolio demo](screenshot.png)
