@@ -9,45 +9,50 @@ var options = ["Rock", "Paper", "Scissor"]
 var playGame = function () {
     var humanChoice = window.prompt("Enter Rock, Paper, or Scissor");
 
-}
+    if (!humanChoice) {
+        return;
+    }
 
-//random selection for computer
-var index = Math.floor(Math.random() * options.length);
-var computerChoice = options[index];
 
-window.alert("Computer chose: " + computerChoice);
+    //random selection for computer
+    var index = Math.floor(Math.random() * options.length);
+    var computerChoice = options[index];
 
-//make it a draws if human and computer choices are the same
-if (humanChoice === computerChoice) {
-    draws++
-    window.alert("It's a draw!");
+    window.alert("Computer chose: " + computerChoice);
 
-//check every win condition for human
-} else if (
-    (humanChoice === "Rock" && computerChoice === "Scissor") ||
-    (humanChoice === "Paper" && computerChoice === "Rock") ||
-    (humanChoice === "Scissor" && computerChoice === "Paper")
-) {
-    wins++;
-    window.alert ("You win!");
+    //make it a draws if human and computer choices are the same
+    if (humanChoice === computerChoice) {
+        draws++;
+        window.alert("It's a draw!");
 
-//if above conditions failed, default human lose
-} else {
-    loses++;
-    window.alert("You lost!");
-}
+        //check every win condition for human
+    } else if (
+        (humanChoice === "Rock" && computerChoice === "Scissor") ||
+        (humanChoice === "Paper" && computerChoice === "Rock") ||
+        (humanChoice === "Scissor" && computerChoice === "Paper")
+    ) {
+        wins++;
+        window.alert("You win!");
 
-//score keeper for human vs computer
-window.alert(
-    "stats:\nWins: " + wins + "\nLosses: " + losses + "\nDraws: " + draws
-);
+        //if above conditions failed, default human lose
+    } else {
+        loses++;
+        window.alert("You lost!");
+    }
 
-//asking if human wants to play again
-var playAgain = window.confirm("Do you want to play again?");
+    //score keeper for human vs computer
+    window.alert(
+        "Stats:\nWins: " + wins + "\nLoses: " + loses + "\nDraws: " + draws
+    );
 
-//if human press yes/ok, run the function again
-if (playAgain) {
-    playGame();
+    //asking if human wants to play again
+    var playAgain = window.confirm("Do you want to play again?");
+
+    //if human press yes/ok, run the function again
+    if (playAgain) {
+        playGame();
+    };
+
 };
 
 //run the game for the first time
